@@ -29,9 +29,11 @@ wliq = "wliq.cli:app"
 where = ["src"]
 
 [tool.pytest.ini_options]
-pythonpath = ["src"]
+pythonpath = [".", "src"]
 testpaths = ["tests"]
 addopts = "-q"
 
 [tool.ruff]
 line-length = 100
+
+
